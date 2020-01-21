@@ -34,7 +34,7 @@ Corriger la DTD en cas d'erreur de validation.
 
 > fix #1.2 DTD film provider
 
-## Exercice XML3 - Une Autre DTD
+## Exercice XML3 - Une Autre DTD 
 
 Vous êtes chargé d'écrire la DTD Librairie.dtd d'un catalogue pour une librairie commerciale sur Internet. 
 Vous ne disposez que de la spécification suivante :
