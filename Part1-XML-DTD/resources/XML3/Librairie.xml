@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE librairie SYSTEM "Librairie.dtd">
+<librairie>
+    <en-tête>
+        <text>c'est <em>une</em> <strong>Librairie</strong><img source="img.png"/>&copyrightLib;</text>
+    </en-tête>
+    <livre ISBN="id_22">
+        <titre></titre>
+        <auteurs>
+            <nom>BONJOUR</nom>
+        </auteurs>
+        <description></description>
+        <prix tva="5.5" devise="euro" type="HT">42</prix>
+    </livre>
+    <livre ISBN="id_42">
+        <titre></titre>
+        <collectif>
+            <direction>
+                <nom>salut</nom>
+            </direction>
+            <membres></membres>
+        </collectif>
+        <description>je suis nul</description>
+        <prix type="HT" devise="euro" tva="5.5">85</prix>
+    </livre>
+</librairie>
+
+
