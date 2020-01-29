@@ -4,7 +4,7 @@
     <en-tête>
         <text>c'est <em>une</em> <strong>Librairie</strong><img source="img.png"/>&copyrightLib;</text>
     </en-tête>
-    <livre ISBN="id_22">
+    <livre ISBN="227589">
         <titre></titre>
         <auteurs>
             <nom>BONJOUR</nom>
@@ -12,7 +12,7 @@
         <description></description>
         <prix tva="5.5" devise="euro" type="HT">42</prix>
     </livre>
-    <livre ISBN="id_42">
+    <livre ISBN="48542">
         <titre></titre>
         <collectif>
             <direction>

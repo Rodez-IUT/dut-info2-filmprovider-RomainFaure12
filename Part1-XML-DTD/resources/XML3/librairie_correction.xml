@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE librairie SYSTEM "Librairie.dtd">
+<librairie>
+    <entete>Librairie donnée en <strong>exemple</strong>.</entete>
+    <livre isbn="12345">
+        <titre>Enseigner le XML</titre>
+        <auteurs>
+            <auteur>
+                <nom>Paul Dumond</nom>
+            </auteur>
+        </auteurs>
+        <description>Ce livre parle de l'enseignement du XML.</description>
+        <prix devise="euro" tva="5.5" type="TTC">12</prix>
+    </livre>
+    <livre isbn="67890">
+        <titre>Enseigner le Java</titre>
+        <collectif>
+            <direction>
+                <nom>Developpeurs associés</nom>
+            </direction>
+            <membres>Valérie Durand, Émilie Favin et Paul Dumond</membres>
+        </collectif>
+        <description> Apprendre <em>Java</em> en s'amusant !. <img src="img.jpg"/></description>
+        <prix type="TTC" devise="euro" tva="5.5">24</prix>
+    </livre>
+</librairie>

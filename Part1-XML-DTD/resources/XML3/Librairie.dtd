@@ -14,16 +14,19 @@
 
 <!ELEMENT titre (#PCDATA)>
 <!ELEMENT description (#PCDATA|strong|em|img)* >
+
 <!ELEMENT prix (#PCDATA)>
 <!ATTLIST prix devise (euro|livre|dollar) "euro">
 <!ATTLIST prix type (HT|TTC) "HT">
-<!ATTLIST prix tva CDATA #FIXED "5.5">
+<!ATTLIST prix tva NMTOKEN #FIXED "5.5">
+
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT prenom (#PCDATA)>
 <!ELEMENT direction (%personnel;)>
 <!ELEMENT membres (#PCDATA)>
-<!ELEMENT collectif (direction,membres)>
+<!ELEMENT collectif (direction?,membres)>
 <!ELEMENT auteurs ((nom,prenom?)+)>
+
 <!ELEMENT livre (titre,(auteurs+|collectif),description,prix)>
-<!ATTLIST livre ISBN ID #REQUIRED>
+<!ATTLIST livre ISBN NMTOKEN #REQUIRED>
 
