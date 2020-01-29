@@ -1,0 +1,8 @@
+/films/film/titre
+/films/film[titre='Minority Report']/resume/text
+/films/realisateur[last()]/nom
+/films/film[position()=2]/titre
+/films/film/resume[contains(text,"mafia")]/ancestor::film
+/films/film/resume/image/ancestor::film/titre
+/films/film[@id_realisateur = 'real_01']/@annee
+count(/films/film[@annee = '2003'])
