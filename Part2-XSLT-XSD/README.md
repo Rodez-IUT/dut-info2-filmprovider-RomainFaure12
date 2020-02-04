@@ -15,7 +15,7 @@ Ouvrir le fichier "FilmProvider.xml" disponible dans les ressources et  écrire 
 
 > fix #2.1 requêtes XPATH
 
-## Exercice XSLT2 - Première feuille XSL
+## Exercice XSLT2 - Première  feuille XSL
 
 1. Créer une feuille de style XSLT « FilmProvider-Basic1.xsl » ne définissant aucun modèle explicite et configurer 
 IntelliJ pour appliquer cette feuille de style au document « FilmProvider.xml ». Lancer la transformation et observer la sortie.
