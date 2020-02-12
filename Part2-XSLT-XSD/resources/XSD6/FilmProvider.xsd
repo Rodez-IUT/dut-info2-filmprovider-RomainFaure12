@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="films" type="filmsType"/>
+    <xs:element name="film" type="filmType"/>
+    <xs:element name="realisateur" type="realisateurType"/>
+    <xs:element name="nom" type="xs:string"/>
+    <xs:element name="prenom" type="xs:string"/>
+    <xs:element name="titre" type="xs:string"/>
+    <xs:element name="resume" type="resumeType"/>
+    <xs:element name="text" type="xs:string"/>
+    <xs:element name="image" type="imageType"/>
+    
+    <xs:complexType name="filmsType">
+        <xs:sequence>
+            <xs:element ref="realisateur"  minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element ref="film"  minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="realisateurType">
+        <xs:sequence>
+            <xs:element ref="prenom"/>
+            <xs:element ref="nom"/>
+        </xs:sequence>
+        <xs:attribute name="id_realisateur" type="xs:ID"/>
+    </xs:complexType>
+
+    <xs:complexType name="filmType">
+        <xs:sequence>
+            <xs:element ref="titre"/>
+            <xs:element ref="resume"/>
+        </xs:sequence>
+        <xs:attribute name="id_film" type="xs:ID"/>
+        <xs:attribute name="id_realisateur" type="xs:IDREF"/>
+        <xs:attribute name="annee" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:complexType name="resumeType">
+        <xs:sequence>
+            <xs:element ref="image" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="text"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="imageType">
+        <xs:attribute name="source" type="xs:string"/>
+    </xs:complexType>
+</xs:schema>
