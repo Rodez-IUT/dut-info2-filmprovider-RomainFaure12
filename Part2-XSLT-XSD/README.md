@@ -13,7 +13,7 @@ Ouvrir le fichier "FilmProvider.xml" disponible dans les ressources et  écrire 
 7. Sélectionner les dates des films de Scorcese.
 8. Retourner  le nombre de films sortis en 2003.
 
-> fix #2.1 requêtes XPATH
+> fix #2.1 requêtes  XPATH
 
 ## Exercice XSLT2 - Première  feuille XSL
 
