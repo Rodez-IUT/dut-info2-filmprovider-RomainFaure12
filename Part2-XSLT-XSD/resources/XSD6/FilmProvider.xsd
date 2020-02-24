@@ -58,7 +58,15 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
-        <xs:attribute name="annee" type="xs:gYear"/>
+        <xs:attribute name="annee" type="xs:gYear">
+            <xs:simpleType>
+                <xs:restriction base="xs:gYear">
+                    <xs:minInclusive value="1"/>
+                    <xs:maxInclusive value="10"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+
     </xs:complexType>
 
     <xs:complexType name="resumeType">
