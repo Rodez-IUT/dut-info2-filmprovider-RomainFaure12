@@ -61,8 +61,8 @@
         <xs:attribute name="annee" type="xs:gYear">
             <xs:simpleType>
                 <xs:restriction base="xs:gYear">
-                    <xs:minInclusive value="1"/>
-                    <xs:maxInclusive value="10"/>
+                    <xs:minInclusive value="1920"/>
+                    <xs:maxInclusive value="2006"/>
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
